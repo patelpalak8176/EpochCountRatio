@@ -1,0 +1,52 @@
+**********************************************
+SQL_TABLE
+**********************************************
+
+
+USE [RichPalDB]
+GO
+/****** Object:  Table [dbo].[DemoTable]    Script Date: 7/29/2016 2:03:33 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[DemoTable](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Fk_User] [int] NOT NULL,
+	[TimeStamp] [bigint] NOT NULL,
+ CONSTRAINT [PK_DemoTable] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET IDENTITY_INSERT [dbo].[DemoTable] ON 
+
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (1, 2, 1469732237)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (2, 2, 1469732267)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (3, 2, 1469732272)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (4, 2, 1469732275)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (5, 2, 1469732281)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (6, 3, 1469732304)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (7, 3, 1469645794)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (8, 3, 1438023394)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (9, 3, 1438030594)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (10, 3, 1469732466)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (11, 3, 1469732470)
+GO
+INSERT [dbo].[DemoTable] ([Id], [Fk_User], [TimeStamp]) VALUES (12, 2, 1432760194)
+GO
+SET IDENTITY_INSERT [dbo].[DemoTable] OFF
+GO
